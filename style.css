@@ -1,0 +1,51 @@
+#container{
+    margin: auto;
+    margin-top: 2vh;
+    height: 660px;
+    width: 80vw;
+    background-color: pink;  
+}
+#heading{
+    height: 175px;
+    padding: 25px 0px 0px 0px;
+    text-align: center;
+}
+button{
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    cursor: pointer;
+    background-color: lightgreen;
+    transition: all 0.5s ease;
+}
+button:hover{
+    box-shadow: 0 2px 5px 0 rgb(39, 38, 38,0.4), 0 2px 5px 0 rgba(38,38,0.38,0.35);
+    background-color: green;
+    color: ivory;
+}
+form input{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+#foods{
+    height: 445px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 80px;
+    overflow-y: scroll;
+}
+.cake, .momo, .coffee{
+    height: 250px;
+    width: 200px;
+    background-color: #f2f2f2;
+    margin-left: 26px;
+    margin-top: 10px
+}
+
+@media screen and (max-width: 600px){
+    #foods{
+        margin-left: 20px;
+        align-items: center;
+    }
+}
